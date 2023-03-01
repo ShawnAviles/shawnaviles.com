@@ -785,10 +785,6 @@ section {
 /*--------------------------------------------------------------
 # skills
 --------------------------------------------------------------*/
-.skills h4 {
-  color: #000;
-}
-
 .skills .skills-title {
   font-size: 26px;
   font-weight: 700;
@@ -838,6 +834,7 @@ section {
   font-weight: 600;
   font-size: 22px;
   padding-top: 1rem;
+  color: #000;
 }
 
 .skills .icon-box h4 a {
