@@ -202,4 +202,28 @@
     })
   });
 
+  tsParticles.load("tsparticles", {
+    fullScreen: {
+      enable: false,
+    },
+    particles: {
+      color: {
+        value: "#095ead",
+      },
+      number: {
+        value: 80, 
+      },
+      move: {
+        enable: true,
+        speed: { min: 0.1, max: 0.5 },
+      },
+      opacity: {
+        value: { min: 0.5, max: 1 },
+      },
+      size: {
+        value: { min: 1, max: 5 },
+      },
+    },
+  });
+
 })()
