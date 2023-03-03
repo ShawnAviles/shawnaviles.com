@@ -2,3 +2,4 @@
 forms/
 .vscode/
 .htaccess
+error_log
