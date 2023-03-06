@@ -576,6 +576,14 @@ section {
   background-color: #ffe01b;
 }
 
+.mailchimp-logo-sm {
+  border-radius: 2rem;
+  border: 0.5rem solid #241c15;
+  width: 75vw;
+  height: calc(75vw / 2.5);
+  background-color: #ffe01b;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
