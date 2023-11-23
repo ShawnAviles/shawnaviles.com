@@ -31,11 +31,17 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-58NMKFXCW9"></script>
+
+  <!-- Utility functions -->
+  <script src="assets/js/utility.js"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-58NMKFXCW9');
+
+    updateLiveStatusBubble('nautiPhrasesStatus', 'https://nautical-translator.vercel.app')
   </script>
 </head>
 
@@ -50,6 +56,7 @@
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me</span></a></li>
         <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Skills</span></a></li>
+        <li><a href="#projects" class="nav-link scrollto"><i class='bx bx-cog'></i> <span>Projects</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
@@ -91,7 +98,7 @@
                 at <span style="color:#0a89ff">Stevens Institute of Technology</span>. I will be graduating in May
                 2024 with a Bachelors of Engineering in Computer Engineering with a concentration in
                 Software Engineering and Design. I have had a passion for engineering and creating since I was a child and 
-                plan to pursue that as a career. Some of my hobbies include skateboarding, fitness, 3D-Printing, and 
+                plan to pursue that as a career in Software Engineering. Some of my hobbies include skateboarding, fitness, 3D-Printing, and 
                 volleyball.
               </p>
             </div>
@@ -207,22 +214,6 @@
 
         <div class="col" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box iconbox-pink">
-            <div class="icon">      
-              <svg width="75" height="75" viewBox="0 0 128 128">
-                <path fill="#f05138"
-                  d="M126.33 34.06a39.32 39.32 0 00-.79-7.83 28.78 28.78 0 00-2.65-7.58 28.84 28.84 0 00-4.76-6.32 23.42 23.42 0 00-6.62-4.55 27.27 27.27 0 00-7.68-2.53c-2.65-.51-5.56-.51-8.21-.76H30.25a45.46 45.46 0 00-6.09.51 21.82 21.82 0 00-5.82 1.52c-.53.25-1.32.51-1.85.76a33.82 33.82 0 00-5 3.28c-.53.51-1.06.76-1.59 1.26a22.41 22.41 0 00-4.76 6.32 23.61 23.61 0 00-2.65 7.58 78.5 78.5 0 00-.79 7.83v60.39a39.32 39.32 0 00.79 7.83 28.78 28.78 0 002.65 7.58 28.84 28.84 0 004.76 6.32 23.42 23.42 0 006.62 4.55 27.27 27.27 0 007.68 2.53c2.65.51 5.56.51 8.21.76h63.22a45.08 45.08 0 008.21-.76 27.27 27.27 0 007.68-2.53 30.13 30.13 0 006.62-4.55 22.41 22.41 0 004.76-6.32 23.61 23.61 0 002.65-7.58 78.49 78.49 0 00.79-7.83V34.06z">
-                </path>
-                <path fill="#fefefe"
-                  d="M85 96.5c-11.11 6.13-26.38 6.76-41.75.47A64.53 64.53 0 0113.84 73a50 50 0 0010.85 6.32c15.87 7.1 31.73 6.61 42.9 0-15.9-11.66-29.4-26.82-39.46-39.2a43.47 43.47 0 01-5.29-6.82c12.16 10.61 31.5 24 38.38 27.79a271.77 271.77 0 01-27-32.34 266.8 266.8 0 0044.47 34.87c.71.38 1.26.7 1.7 1a32.7 32.7 0 001.21-3.51c3.71-12.89-.53-27.54-9.79-39.67C93.25 33.81 106 57.05 100.66 76.51c-.14.53-.29 1-.45 1.55l.19.22c10.59 12.63 7.68 26 6.35 23.5C101 91 90.37 94.33 85 96.5z">
-                </path>
-              </svg>
-            </div>
-            <h4>Swift</h4>
-          </div>
-        </div>
-
-        <div class="col" data-aos="zoom-in" data-aos-delay="300">
-          <div class="icon-box iconbox-pink">
             <div class="icon">
               <svg width="75" height="75" viewBox="0 0 128 128">
                 <path fill="#9B4F96"
@@ -310,16 +301,6 @@
             <div class="icon-box iconbox-pink"> 
               <div class="icon">
                 <svg width="75" height="75" viewBox="0 0 128 128">
-                  <path fill="#5EBAEB" d="M126.33 34.06a39.32 39.32 0 00-.79-7.83 28.78 28.78 0 00-2.65-7.58 28.84 28.84 0 00-4.76-6.32 23.42 23.42 0 00-6.62-4.55 27.27 27.27 0 00-7.68-2.53c-2.65-.51-5.56-.51-8.21-.76H30.25a45.46 45.46 0 00-6.09.51 21.82 21.82 0 00-5.82 1.52c-.53.25-1.32.51-1.85.76a33.82 33.82 0 00-5 3.28c-.53.51-1.06.76-1.59 1.26a22.41 22.41 0 00-4.76 6.32 23.61 23.61 0 00-2.65 7.58 78.5 78.5 0 00-.79 7.83v60.39a39.32 39.32 0 00.79 7.83 28.78 28.78 0 002.65 7.58 28.84 28.84 0 004.76 6.32 23.42 23.42 0 006.62 4.55 27.27 27.27 0 007.68 2.53c2.65.51 5.56.51 8.21.76h63.22a45.08 45.08 0 008.21-.76 27.27 27.27 0 007.68-2.53 30.13 30.13 0 006.62-4.55 22.41 22.41 0 004.76-6.32 23.61 23.61 0 002.65-7.58 78.49 78.49 0 00.79-7.83V34.06z"></path><path fill="#fefefe" d="M85 96.5c-11.11 6.13-26.38 6.76-41.75.47A64.53 64.53 0 0113.84 73a50 50 0 0010.85 6.32c15.87 7.1 31.73 6.61 42.9 0-15.9-11.66-29.4-26.82-39.46-39.2a43.47 43.47 0 01-5.29-6.82c12.16 10.61 31.5 24 38.38 27.79a271.77 271.77 0 01-27-32.34 266.8 266.8 0 0044.47 34.87c.71.38 1.26.7 1.7 1a32.7 32.7 0 001.21-3.51c3.71-12.89-.53-27.54-9.79-39.67C93.25 33.81 106 57.05 100.66 76.51c-.14.53-.29 1-.45 1.55l.19.22c10.59 12.63 7.68 26 6.35 23.5C101 91 90.37 94.33 85 96.5z"></path>
-                </svg>
-              </div>
-              <h4>SwiftUI</h4>
-            </div>
-          </div>
-          <div class="col" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink"> 
-              <div class="icon">
-                <svg width="75" height="75" viewBox="0 0 128 128">
                   <defs><linearGradient id="bootstrap-original-a" x1="76.079" x2="523.48" y1="10.798" y2="365.95" gradientTransform="translate(1.11 14.613) scale(.24566)" gradientUnits="userSpaceOnUse"><stop stop-color="#9013fe" offset="0"></stop><stop stop-color="#6610f2" offset="1"></stop></linearGradient><linearGradient id="bootstrap-original-b" x1="193.51" x2="293.51" y1="109.74" y2="278.87" gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" offset="0"></stop><stop stop-color="#f1e5fc" offset="1"></stop></linearGradient><filter id="bootstrap-original-c" x="161.9" y="135.46" width="197" height="249" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="8"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs><path d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z" fill="url(#bootstrap-original-a)"></path><path transform="translate(1.494 2.203) scale(.24566)" d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z" fill="url(#bootstrap-original-b)" filter="url(#bootstrap-original-c)" stroke="#fff"></path>
                 </svg>
               </div>
@@ -376,6 +357,65 @@
     </div>
   </section><!-- End skills Section -->
 
+
+  <section id="projects" class="projects"><!-- Start Projects Section -->
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+      <div class="row">
+        <div class="col-md d-flex justify-content-center align-items-center">
+          <div class="card mb-3 border border-3 border-warning" style="width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="/assets/img/projects/NauticalPhrases/LogoVert.png" class="img-fluid rounded-start p-3" style="max-height: 200px;" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-dark d-flex align-items-center justify-content-between">
+                    Nauti Phrases </i> <span class="badge text-light rounded-pill text-bg-warning">Winner</span>
+                  </h5>
+                  <p class="card-text text-dark">
+                    At NJIT's 2023 Hackathon, our team won the "Best Use of Kintone" award, winning amongst 200+ participants with our full-stack web app aimed to educate users on nautical phrases. We utilizied React, Three.js, Express.js, Node.js, Kintone, and TailwindCSS.
+                  </p>
+                  <a href="https://devpost.com/software/jib-jargon" target="_blank" rel="noopener noreferrer">
+                    <button class="btn text-light" style="background-color: #003e54;">Devpost</button>
+                  </a>
+                  <a href="https://github.com/Caposto/nautical_translator" target="_blank" rel="noopener noreferrer">
+                    <button class="btn btn-dark">Github  <i class="bx bxl-github" style="color: #fff"></i></button>
+                  </a>
+                  <a href="https://nautical-translator.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <button id="nautiPhrasesStatus" class="btn btn-outline-success position-relative">
+                      Visit Site 
+                      <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle"><span class="visually-hidden">Live Status</span></span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center align-items-center">
+          <div class="card mb-3" style="width: 540px; min-height: auto;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="/assets/img/projects/Blueprint/logo.png" class="img-fluid rounded-start p-3" style="height: 140px; max-height: 200px;" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-dark">Stevens Blueprint Website v1</h5>
+                  <p class="card-text text-dark">Developed Version 1 of Chapter's website using ReactJS and TailwindCSS, adhering to org's brand assets and Figma mockups. Featured ESLint, Prettier, and Husky pre-commit hooks for code consistency, with responsive layouts designed for extensibility and scalability by future devs</p>
+                  <a href="https://github.com/stevensblueprint/blueprint-website_old" target="_blank" rel="noopener noreferrer">
+                    <button class="btn btn-dark rounded">Github <i class="bx bxl-github" style="color: #fff"></i></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section><!-- End Projects Section -->
+
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
@@ -394,14 +434,14 @@
               <h5>2021 - 2024</h5>
               <p><em>Stevens Institute of Technology - Hoboken, NJ</em></p>
               <ul>
-                <li><strong>GPA: </strong> 4.0/4</li>
+                <li><strong>GPA: </strong> 3.99/4</li>
                 <li><strong>Concentration: </strong> Software Engineering & Design</li>
-                <li><strong>Awards: </strong> Edwins A. Stevens Scholarship, Stevens Grant, Kenneth W. Freeman Scholarship, Dean&apos;s List, HKN IEE Member, Hispanic Scholarship Fund Scholar</li>
+                <li><strong>Awards: </strong> Edwins A. Stevens Scholarship, Stevens Grant, Kenneth W. Freeman Scholarship, Dean&apos;s List, HKN IEE Member, Hispanic Scholarship Fund Scholar, Tau Beta Pi Scholar</li>
                 <li><strong>Courses: </strong> Data Structures and Algorithms, Probability and Statistics, Differential Equations, Discrete Mathematics, Engineering Design and Systems Thinking I  II  III & IV, Microprocessor Systems, Entrepreneurial Thinking, Information Systems Engineering</li>
                 <li><strong>Leadership:</strong>
                   <ul class="mt-2">
                     <li><em>President</em> of the Men&apos;s Volleyball Club</li>
-                    <li><em>Vice President</em> of Design for Blueprint</li>
+                    <li><em>Vice President</em> of Projects for Blueprint</li>
                     <li>CPE <em>Student Advisory Council Representative</em></li>
                   </ul>
                 </li>
@@ -424,8 +464,14 @@
             <h3 class="resume-title">Work Experience</h3>
             <div class="resume-item">
               <h4><em>Software Engineering Intern</em></h4>
-              <h5>May 2023 - Present</h5>
+              <h5>May 2023 - December 2023</h5>
               <p><em>Intuit Mailchimp - Brooklyn, New York</em></p>
+              <ul>
+                <li>Neutralized high-risk CSRF vulnerabilities on a hard deadline with client side JavaScript & Google Cloud Storage enhancing security while maintaining Jest unit test coverage</li>
+                <li>Developed Email Editor's AI Assistant Tone Selection feature using React, Less CSS, PHP, and Playwright for E2E test coverage which was released to 10,500+ beta users</li>
+                <li>Collaborated in GenAI Marketing Teams's weekly Agile meetings, enhancing team discussions & coordination</li>
+                <li>Analyzed touchpoint data to calculate & communicate Generative AI API peak request rates for new product launches</li>
+              </ul>
               <div class="pb-4">
                 <a 
                   href="https://www.linkedin.com/posts/shawn-aviles_mailchimp-activity-7032156803698216960-cPSo?utm_source=share&utm_medium=member_desktop"
