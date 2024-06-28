@@ -588,6 +588,22 @@ section {
   background-color: #ffe01b;
 }
 
+.amazon-logo {
+  border-radius: 2rem;
+  border: 0.5rem solid #241c15;
+  width: 450px;
+  height: 300px;
+  background-color: #ffe01b;
+}
+
+.amazon-logo-sm {
+  border-radius: 2rem;
+  border: 0.5rem solid #241c15;
+  width: 75vw;
+  height: calc(75vw / 1.5);
+  background-color: #ffe01b;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
